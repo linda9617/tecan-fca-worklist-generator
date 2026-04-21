@@ -24,7 +24,7 @@ header .author{font-size:.8rem;opacity:.78;margin-top:2px;text-align:right}
 .field textarea{min-height:90px;resize:vertical}
 .field.inline{flex-direction:row;align-items:center;gap:8px}
 .field.inline label{margin:0;font-size:.84rem;color:var(--text)}
-.wrap{max-width:1560px;margin:0 auto;padding:16px 14px 48px}
+.wrap{max-width:1560px;margin:0 auto;padding:16px 14px 60px}
 .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;display:flex;flex-direction:column;min-height:420px}
 .ph{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--border);background:var(--surface-2);flex-wrap:wrap}
 .ptitle{font-size:.85rem;font-weight:700;color:var(--primary)}
@@ -110,7 +110,7 @@ header .author{font-size:.8rem;opacity:.78;margin-top:2px;text-align:right}
 .legend{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
 .legend-item{display:flex;align-items:center;gap:5px;font-size:.69rem}
 .dot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
-.copyright{margin-top:14px;color:var(--muted);font-size:.74rem;text-align:right}
+.copyright{position:fixed;bottom:0;left:0;width:100%;text-align:center;color:var(--muted);font-size:.74rem;padding:6px 0 8px;background:var(--bg);border-top:1px solid var(--border);z-index:100}
 .hidden{display:none!important}
 @media(max-width:1180px){.sbar{grid-template-columns:repeat(2,minmax(180px,1fr))}.stats{grid-template-columns:repeat(3,minmax(110px,1fr))}}
 @media(max-width:860px){.cc{flex-direction:column}.cc-summary{margin-left:0;align-items:flex-end;width:100%}.pm-grid,.stats{grid-template-columns:1fr}.sbar{grid-template-columns:1fr}.tbl-wrap{height:300px;min-height:180px;max-height:70vh}}
@@ -252,7 +252,10 @@ header .author{font-size:.8rem;opacity:.78;margin-top:2px;text-align:right}
     </details>
   </div>
 
-  <div class="copyright">Copyright © 2026 Lin. All rights reserved.</div>
+  <div class="copyright">
+    <div style="margin-bottom:3px">The code has been verified and will not store or send any data. You can also download the <a href="https://raw.githubusercontent.com/linda9617/tecan-fca-worklist-generator/main/index.html" download="Tecan_Worklist_Generator.html" style="color:var(--primary);text-decoration:none;font-weight:600">local version</a> to use.</div>
+    Copyright © 2026 Lin. All rights reserved.
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
